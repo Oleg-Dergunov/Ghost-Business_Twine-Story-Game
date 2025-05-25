@@ -1,0 +1,1318 @@
+:: StoryTitle
+Ghost Business
+
+
+:: StoryData
+{
+  "ifid": "A2E897A4-4204-4B24-A305-83F31D50F5F8",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "tag-colors": {
+    "startup": "red",
+    "shop": "green",
+    "outside": "blue",
+    "inside": "purple"
+  },
+  "zoom": 0.6
+}
+
+
+:: "Begone! Depart!", hold a cross in front of you. [inside] {"position":"325,1875","size":"100,100"}
+<table><tr><td width = "60%">You raised a cross in front of you, hoping it would ward off the ghost. The man looked at you, puzzled. <b>"You know, I was never particularly religious,"</b> he remarked with mild curiosity.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $choice to "begone")(set: $crucifix to false)
+---
+
+[["Pardon", put away the crucifix|Basic1]]
+
+[[Start praying.]]
+
+
+:: "Begone! Depart!", throw a pinch of salt at the ghost [inside] {"position":"200,1875","size":"100,100"}
+<table><tr><td width = "60%">As you threw a pinch of salt at the ghost, he seemed more surprised than frightened. <b>"You know, I'm not exactly dinner to be seasoned!"</b> he remarked, raising an eyebrow in amusement.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $choice to "begone")(set: $salt to false)
+---
+
+[["Pardon", put away the salt|Basic1]]
+
+[[Continue throwing salt in him.]]
+
+
+:: "En garde!", assume a stance as well [inside] {"position":"325,2000","size":"100,100"}
+<table><tr><td width = "60%">Deciding to play along, you picked up a makeshift weapon of your own, and the duel began. The ghost's enthusiasm was infectious, and soon you found yourself enjoying the playful sparring. Despite the ghost's spirited movements, you eventually grew tired and raised your hands in surrender.
+
+The ghost triumphantly declared, "Aha! Once again, experience triumphs over mortality!" His laughter echoed through the room, as he floated gracefully with a victorious smile.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it + 1)
+---
+
+[[Next|Party]]
+
+
+:: "I have a disco ball, isn't it the best thing for a party?" [inside] {"position":"375,2775","size":"100,100"}
+<table><tr><td width = "60%">The ghost's eyes lit up with excitement. <b>"A disco ball? Now that's what I'm talking about!"</b> he exclaimed. <b>"Hang it on the chandelier and turn it on!"</b>
+
+You quickly found a spot on the chandelier and hung the disco ball. With a flick of a switch, the room was filled with swirling, colorful lights, casting vibrant patterns on the walls and ceiling. The ghost floated beneath the disco ball, delighted by the transformation.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+<b>"This is fantastic!"</b> the ghost said, beaming with joy. <b>"You've really brought the party to life. Or, well, to afterlife."</b>
+(set: $funny to it + 1)
+---
+
+[[Next|Farewell/Invitation]]
+
+
+:: "I have a radio! How about some music for your party?" [inside] {"position":"500,2775","size":"100,100"}
+<table><tr><td width = "60%">The ghost's eyes lit up with excitement. <b>"A radio? Now that's a great idea!"</b> he exclaimed. <b>"Set it to a disco station, will you? I can't resist a good boogie."</b>
+
+You quickly tuned the radio to a disco station, and the room was soon filled with the infectious beats of classic disco hits. The ghost started to sway and groove to the music, his translucent form shimmering in time with the rhythm.
+
+<b>"Ah, this is perfect!"</b> the ghost said, beaming with joy. <b>"A ghostly party with a disco twist. You've really outdone yourself."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it + 1)
+---
+
+[[Next|Farewell/Invitation]]
+
+
+:: "I have instructions of professional exorcists!", Read the spell from "Ghost Fighting for Dummies." [inside] {"position":"1275,2775","size":"100,100"}
+<table><tr><td width = "60%">You began reading the incantation from "Ghost Fighting for Dummies," struggling with embarrassment due to its absurdity. 
+
+<b>"Oh no, not something... like this,"</b> the man looked at you with a pained expression, <b>"Could you stop?"</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[["Sorry, I had to try."|Farewell/Invitation]]
+
+[[Continue reading, add some hand passes]]
+
+
+
+
+:: "I have my last magic trick!", open the mystical book on one of the last pages and start reading out loud. [inside] {"position":"1550,2775","size":"100,100"}
+<table><tr><td width = "60%">You opened the mystical book to one of the last pages and began reading the incantation aloud. The words felt powerful, resonating with an ancient energy that seemed to grow stronger with each syllable. The air around you crackled with unseen force, causing the room to tremble and the lights to flicker.
+
+The ghost, witnessing the immense power of the spell, began to look nervous. <b>"Um, are you sure you know what you're doing?"</b> he asked, his voice wavering.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+A dark, swirling vortex started to form in the center of the room, the temperature dropped, and an eerie wind howled through the space. As the intensity of the incantation increased, the ghost's concern grew. <b>"This is getting dangerous! Stop, before it's too late!"</b>
+
+Despite the ghost's pleas, you found that you couldn't stop, even if you wanted to. The words flowed from your mouth with a force of their own, binding you to the spell. The ghost's anxiety reached a fever pitch.<b>"Stop! Please, stop!"</b> he cried out, but it was too late. The spell had taken over, and you were merely a conduit for its raw, unrestrained power.
+
+The room seemed to pulsate with energy, the very fabric of reality bending and twisting under the force of the incantation. The ghost watched in terror as the spell reached its climax, unsure of what would happen next.
+
+---
+(if: $beaver is true)[(set: $choice to "Beaver")](else:)[(set: $choice to (either: "Banishing", "Horror"))]
+(link:"Next")[(goto: $choice)]
+
+
+
+:: "I have only myself, but isn't it enough?" [inside] {"position":"875,2775","size":"100,100"}
+<table><tr><td width = "60%">(if: $funny > 2)[The ghost's eyes widened with surprise, and then a broad grin spread across his face. <b>"Oh ho, I like your spirit!"</b> he exclaimed. <b>"Do you think you're good enough for a ghost party? But remember, you're still alive, you know..."</b> He floated closer, inspecting you with an appraising gaze.](else:)[The ghost raised an eyebrow and chuckled softly. "Oh, I don't know about that," he said, his tone slightly condescending. <b>"You haven't exactly been the life of the party so far. I'm not sure a living person can really keep up with us."</b>
+
+He floated closer, his expression softening. <b>"It's not that I don't appreciate the effort, but ghost parties are... well, they're a bit different. Maybe it's best if you head out. No hard feelings, right?"</b>
+
+You nodded, feeling a mix of disappointment and understanding.]</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+
+[[Next|Farewell/Invitation]]
+
+
+:: "I have the power of the cross!", raise the crucifix [inside] {"position":"1150,2775","size":"100,100"}
+<table><tr><td width = "60%">You raised a cross in front of you, hoping it would ward off the ghost. The man looked at you, annoyed.
+
+<b>"Oh no, not something... like this,"</b> the man looked at you with a pained expression, <b>"Could you stop?"</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[["Sorry, I had to try."|Farewell/Invitation]]
+
+[[Start praying fervently]]
+
+
+
+:: "I have this candles, , in case you might need them." [inside] {"position":"625,2775","size":"100,100"}
+<table><tr><td width = "60%">The ghost looked at the candles with a condescending expression. He pretended to sniff them and remarked, <b>"Vanilla scented, huh? Interesting choice."</b> He paused for a moment, then shrugged. <b>"Well, leave them in the corner. Someone might like them... eventually."</b>
+
+You placed the candles on a nearby table, feeling a bit awkward.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+
+[[Next|Farewell/Invitation]]
+
+
+:: "I just had a free night and decided to have some fun here." [inside] {"position":"950,2000","size":"100,100"}
+<table><tr><td width = "60%">The man chuckled approvingly. 
+
+<b>"Having fun in a haunted house? Oh, who am I to judge people's tastes!"</b>
+
+The ghost's presence filled the space with an unsettling yet oddly charming aura, making you question the reality of your situation.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $choice to "fun")(set: $funny to it + 1)
+---
+
+[[Next|Party]]
+
+
+:: "I'm not scared! I have a beaver!", put up a stuffed beaver, pretending it's roaring. [inside] {"position":"575,2000","size":"100,100"}
+<table><tr><td width = "60%">The ghost paused for a moment, his semi-transparent form shimmering with curiosity. Then, he burst into laughter, clutching his sides. 
+
+<b>"Oh, this is priceless! A stuffed beaver as your fierce protector?"</b> he said, his voice filled with amusement. <b>"I must say, you have quite the imagination!"</b>
+
+He continued to laugh, the sound echoing eerily in the dimly lit room. Despite the oddness of the situation, you couldn't help but feel a bit of pride for making a ghost laugh so heartily.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $choice to "beaver")(set: $funny to it + 1)
+---
+
+[[Next|Party]]
+
+
+:: "I've come here to banish all the spirits." [inside] {"position":"825,2050","size":"100,100"}
+<table><tr><td width = "60%">The ghost looked at you in surprise. 
+
+<b>"Banish me? But why? That's absurd!"</b> he exclaimed, clearly taken aback. He paused for a moment, contemplating your words. Then, with a doubtful expression, he turned his gaze back to you and asked, <b>"And how exactly do you plan to do that?"</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+(if: $crucifix is true)[
+
+[[Get the crucifix and try to exorcise the ghost.]]](if: $dummyBook is true)[
+
+[[Read the spell from "Ghost Fighting for Dummies."]]](if: $mysteryBook is true)[
+
+[[Open the mystical book halfway and start reading out loud.]]]
+
+[["Maybe if I just ask, you'll go away yourself?"]]
+
+
+:: "Maybe if I just ask, you'll go away yourself?" [inside] {"position":"950,2200","size":"100,100"}
+<table><tr><td width = "60%">The ghost started laughing, a chuckle at first that quickly grew into hearty laughter. His laughter echoed throughout the room, filling the air with an eerie, almost infectious energy. After nearly five minutes of uncontrollable mirth, he finally calmed down. He looked at you with a wide grin and said, <b>"No, not a chance."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it + 1)
+---
+
+[[Next|Party]]
+
+
+:: "Right... Of course. That’s what I do.” [shop] {"position":"1075,650","size":"100,100"}
+<table><tr><td width = "60%">The woman’s lips curled into a faint smile, as though she’d known exactly how you’d respond. She slid the check over to you, and as you reached for it, she added, “But you should know one thing.”
+
+You paused, looking up.
+
+<b>“You have only one night,”</b> she said, her tone serious. <b>“If the job isn’t done by morning, you won’t get paid. And I’ll be… disappointed.”</b>
+
+Her eyes held yours for a brief moment, sharp and calculating, before she turned</td><td><img src = "https://i.imgur.com/0e8xKT2.jpeg" width = "85%" align = right></td></tr></table>on her heel and made her way to the door. The bell jingled again as she stepped out into the fading light.
+
+<b>“Good luck,”</b> she called back, just before the door swung shut behind her.
+
+You stood there, staring at the check for a long second.
+
+One night? You glanced around the shop, at the dusty shelves, at the piles of unsold trinkets. This was going to be interesting.
+
+And then, almost as an afterthought, you muttered to yourself, <b>“I have no idea what I’m doing now…”</b>
+
+--
+
+[[Get in the van and head to the designated location.]]
+
+[[Go to sleep.]]
+
+
+:: "To be honest, I don't know myself" [inside] {"position":"700,2000","size":"100,100"}
+<table><tr><td width = "60%">You looked at the ghost, exasperated. <b>"I have no idea what I'm doing here. I was hired to perform an exorcism, but only because I was mistaken for my uncle. I don't know anything about ghosts!"</b>
+
+The man floated closer, his expression softening with sympathy. <b>"Oh, don't worry,"</b> he said gently. <b>"These things happen. You're not the first to be caught in a mix-up."</b> He smiled reassuringly. <b>"Everything will sort itself out. Sometimes, the unexpected leads to the best experience. I think so..."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+
+[[Next|Party]]
+
+
+:: "Um, okay." [outside] {"position":"100,1125","size":"100,100"}
+Without further ado, you left the room and headed outside. Climbing into your van, you glanced back at the building, noticing strange light spots flickering in the window frames. You started the engine and drove away, leaving the haunted house and its spectral inhabitants behind.
+
+---
+
+[[Next|Back to the shop]] 
+
+
+:: "Wait, I have something for your party," [inside] {"position":"875,2650","size":"100,100"}
+<table><tr><td width = "60%">The ghost raised an eyebrow in surprise. <b>"And what might that be?"</b> he asked, curiosity piqued.
+
+<b>"More guests will be arriving soon, you'd better hurry,"</b> the ghost added, looking slightly amused but with a sense of urgency in his voice.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+(if: $crucifix is true)[
+
+[["I have the power of the cross!", raise the crucifix]]](if: $dummyBook is true)[
+
+[["I have instructions of professional exorcists!", Read the spell from "Ghost Fighting for Dummies."]]](if: $mysteryBook is true)[
+
+[["I have my last magic trick!", open the mystical book on one of the last pages and start reading out loud.]]](if: $candles is true)[
+
+[["I have this candles, , in case you might need them."]]](if: $discoBall is true)[
+
+[["I have a disco ball, isn't it the best thing for a party?"]]](if: $radio is true)[
+
+[["I have a radio! How about some music for your party?"]]]
+
+[["I have only myself, but isn't it enough?"]]
+
+[["To be honest, Ihave noting."|"Um, okay."]]
+
+
+
+:: Agree to attend the party [inside] {"position":"875,3150","size":"100,100"}
+The ghost party was a whirlwind of activity, with spirits from various eras mingling and dancing to the infectious beats of disco. Unusual personalities from different times floated through the room, sharing jokes, laughter, and strange tales of their pasts. The atmosphere was charged with excitement, and the entire night was filled with lively conversations and unforgettable moments, and yes, disco.
+
+As dawn approached, just before the first rays of sunlight began to creep in, the ghost who owned the house pulled you aside. His translucent form flickered in the dim light. "I need to tell you something," he said, his voice low and conspiratorial. "In one of the walls, there's a hidden cache with a few bottles of vintage wine. They're worth a small fortune now."
+
+He smiled wistfully. <b>"I don't need them anymore, but they could be quite valuable to you. Whether you drink them or sell them, remember to keep the spirit of fun alive."</b>
+
+You nodded, grateful for the unexpected gift and the reminder to cherish the joy of life, even in the most unlikely of places.
+
+---
+
+<center>THE END</center>
+
+
+:: Back to the shop [shop] {"position":"675,650","size":"100,100"}
+Soon you returned to your shop, collapsed into a small room that had once been a storage room, but now served as your bedroom. Tired, you fell into bed, covering your eyes with your hand. Whatever had happened tonight, you were not up to the job. You were probably just not cut out for it.
+
+---
+
+[[Next|Bill apocalypse]]
+
+
+
+
+:: Banishing [inside] {"position":"1500,2900","size":"100,100"}
+You continued to read the incantation, feeling the power of the spell reach its zenith. A strange light began to emanate from the cracks in the wooden floor, growing stronger and brighter with each passing moment. It started to seep into the room, coalescing into a tangible form.
+
+The ghost's expression turned from nervous to terrified. <b>"Oh no! This is not fun anymore!"</b> he shouted as the glowing hands reached up from the floor, grasping and entangling him and the other spirits. You watched in awe as the spectral hands pulled the ghosts down through the floorboards, dragging them into some unknown abyss.
+
+In mere seconds, the once lively room became eerily silent and empty. The house, which had been filled with the presence of many spirits, now stood completely vacant, devoid of any living or non-living soul.
+
+---
+
+[[Next|Victory?]] 
+
+
+:: Basic1 [inside] {"position":"700,1750","size":"100,100"}
+<table><tr><td width = "60%">(if: $choice is not "begone")[You couldn't understand how you managed not to scream in terror, instead finding yourself speaking to the man.](if: $choice is "Glowing")[ The green lights around you slowly begin to fade.](if: $choice is "Levitation")[ Suddenly you fall to the floor, hitting your elbow hard. But at least gravity is behaving decently again.](if: $choice is "candles")[ The candles continue to flicker and seem to smell of vanilla.](if: $choice is "disco ball")[ The disco ball continues to throw colored lights around, looking both impressive and out of place.](if: $choice is "good music")[ The disco beats continue to pour out of the speakers of the old radio.] The ghost, shimmering softly in the dim light, raised an eyebrow and shrugged his shoulders with doubt. With a curious expression, he asked, <b>"And what are you doing here?"</b> His voice was laced with both suspicion and intrigue as he floated closer, his eyes studying you intently.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+
+[["To be honest, I don't know myself"]]
+
+[["I've come here to banish all the spirits."]]
+
+
+:: Beaver [inside] {"position":"1550,3050","size":"100,100"}
+<table><tr><td width = "60%">The words felt powerful, resonating with an ancient energy that seemed to grow stronger with each syllable. A dark energy started to swirl in the center of the room, forming a vortex that sucked everything into a some, dark object on the floor.
+
+Suddenly, everything went quiet. The ghost, clearly shaken, said nervously, <b>"Ugh... No. After a show like that, I can't party anymore. Good luck!"</b> With that, he disappeared, dissolving into thin air, leaving you seemingly alone in the hall.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+Or were you? Out of the corner of your eye, you noticed movement on the floor. Approaching cautiously, you saw it was just a stuffed beaver. But wait—could it have moved?
+
+---
+
+[[Next|Beaver!]]
+
+
+:: Beaver! [inside] {"position":"1550,3175","size":"100,100"}
+<table><tr><td width = "60%">To your astonishment, the beaver suddenly flipped onto its hind legs and looked up at you.
+
+<b>"Hey, got anything to gnaw on?"</b> it asked casually.
+
+You were shocked. <b>"You can talk?"</b> you stammered.
+
+<b>"Seems like it,"</b> replied the beaver.
+
+<b>"Who... or what are you?"</b> you asked, bewildered.</td><td><img src = "https://i.imgur.com/W3qCFnj.jpeg" width = "85%" align = right></td></tr></table>
+<b>"I'm not sure. A beaver, maybe? Anyway, got anything to gnaw on?"</b>
+
+Realizing you had just met the world's only talking beaver, you decided to take it with you. As it turned out, knowing a talking beaver had its perks—not just chewed-up furniture. The two of you started participating in various shows and events, and you found you could make quite a profit. Of course, you made sure to keep your new friend well-supplied with tasty treats.
+
+---
+
+<center>THE END</center>
+
+
+:: Bill apocalypse [shop] {"position":"825,650","size":"100,100"}
+<table><tr><td width = "60%">The days blurred by, one after another, as the shop became more and more of a burden. The weight of unpaid bills piled up on the counter, each one adding a layer of dread. Every knock on the door was a reminder of how close you were to losing everything. And then, the shop just… sat there, empty of customers, empty of hope.
+
+You let out a long sigh, glancing at the front window as the light from outside began to dim.</td><td><img src = "https://i.imgur.com/4OTNF4V.jpeg" width = "85%" align = right></td></tr></table>
+“Well, guess I don’t have a business anymore,” you muttered, crumpling up another bill.
+
+---
+
+<center>THE END</center>
+
+
+:: Butterflies [inside] {"position":"1250,2325","size":"100,100"}
+<table><tr><td width = "60%">You finished the incantation, uttering the last words. For a couple of seconds, everything remained eerily calm. Then, the room was suddenly filled with fluttering, colorful spots. It was a swarm of butterflies – yellow, blue, and purple. They darted around chaotically, creating a vibrant, almost magical display.
+
+As the butterflies swirled around, they gradually made their way towards the broken window, exiting in a whirlwind of color. You watched in awe as they soared into the night sky, their delicate wings glistening under the moonlight.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+The ghost exclaimed, <b>"Wow! Have you ever thought about performing on stage with that?"</b>
+
+You glanced at him and shrugged uncertainly, still mesmerized by the incredible spectacle.
+(set: $funny to it + 1)
+---
+
+[[Next|Party]]
+
+
+:: Continue insulting the ghost [inside] {"position":"1125,1500","size":"100,100"}
+You continued to hurl insults at the ghost, shouting directly into his face. The ghost's expression turned to one of fury as he exclaimed, <b>"How dare you! I won't tolerate such rudeness in my own house!"</b> With a dramatic wave of his hand, your head started to spin, and everything went black.
+
+When you came to, you found yourself sitting behind the wheel of a van. Across from you, the sun was rising, casting a golden glow over the landscape. Maybe it was all just a dream...
+
+---
+
+[[Return to your store|Back to the shop]]
+
+
+:: Continue reading, add some hand passes [inside] {"position":"1275,2900","size":"100,100"}
+<table><tr><td width = "60%">You persisted, reading the incantation louder and with more expression, despite its absurdity. The ghost, looking increasingly weary, glanced around the room and shrugged. <b>"How long is this thing, anyway?"</b> he asked, exasperated.
+
+Without pausing, you replied, <b>"I've read it five times already, maybe this time it'll work?"</b>
+
+The ghost looked at you with a pained expression. <b>"Please, just stop,"</b> he pleaded. <b>"This is too much."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[["Well, I had to try."|Farewell/Invitation]]
+
+
+
+:: Continue reading. It must help. [inside] {"position":"825,2325","size":"100,100"}
+<table><tr><td width = "60%">You persisted, reading the incantation louder and with more expression, despite its absurdity. The ghost, looking increasingly weary, glanced around the room and shrugged. <b>"How long is this thing, anyway?"</b> he asked, exasperated.
+
+Without pausing, you replied, <b>"I've read it five times already, maybe this time it'll work?"</b>
+
+The ghost looked at you with a pained expression. <b>"Please, just stop,"</b> he pleaded. <b>"This is too much."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[[Next|Party]]
+
+
+:: Continue throwing salt in him. [inside] {"position":"75,2000","size":"100,100"}
+<table><tr><td width = "60%">Undeterred, you emptied the entire container of salt in his direction. The ghost found himself suspended in a cloud of settling salt particles, his semi-transparent face shimmering with annoyance. <b>"This is quite improper behavior for a guest!"</b> he exclaimed, his voice tinged with irritation.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[[Next|Party]]
+
+
+:: Examine the mystery book [outside] {"position":"1500,300","size":"100,100"}
+You picked up the mystical book. To open it, you first had to remove the strap tightly wrapped around the binding. Its old pages were covered in strange symbols and Latin text, which you couldn’t understand at all. The cover had a sinister ornament that sent a chill down your spine. The book felt dangerous and mysterious, as if warning you about the hidden power within.
+
+---
+
+[[Take the mystery book]]
+
+[[Take something else|Take an item]]
+
+
+:: Farewell/Invitation [inside] {"position":"875,3025","size":"100,100"}
+(if: $funny > 2)[<table><tr><td width = "60%"><b>"You know,"</b> the ghost spoke hesitantly at first, but then seemed to cast aside his doubts, <b>"you've got enough party spirit for tonight. Why don't you stay and join us?"</b>
+
+The ghostly figures around the room seemed to glow a bit brighter. It was clear that they were also pleased with the turn of events. The ghost nodded approvingly. <b>"I must admit, I didn't expect much at first. But you've shown you've got the soul for a ghost party."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+
+[[Agree to attend the party]]
+
+[[Silently shake your head and leave|"Um, okay."]]](else-if: $funny > -3)[
+<table><tr><td width = "60%">The ghost's expression turned more serious. <b>"But, honestly, it's time for you to go."</b>
+
+You felt a mix of disappointment and acceptance. You nodded, realizing that you had given it your all but hadn't managed to banish the ghosts or earn a place at their party. The ghost floated a bit closer and added, <b>"No hard feelings. It's just that living and dead don't mix too well."</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+With a final glance around the room, you made your way to the exit. As you stepped outside, you took one last look at the eerie, glowing scene inside. Then, you turned and walked away, knowing you had done everything you could.
+---
+
+[[Leave the place|"Um, okay."]]](else:)[<table><tr><td width = "60%">The ghost's expression turned more hostile. <b>"You know,"</b> he began, a hint of frustration creeping into his voice, <b>"after everything you've done, I think this place is now contaminated with your dullness and boredom. It's no longer fit for a ghostly party."</b>
+
+The ghost sighed dramatically, shaking his head. <b>"Congratulations, you’ve won. You've driven us out. We'll be looking for another place to haunt for the next few years. You can celebrate!"</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+With that, the ghostly figures started to fade, their ethereal forms dissipating into thin air. The room grew silent and still, leaving the house completely empty. You stood there, realizing that in your relentless attempts, you had indeed succeeded in driving the ghosts away.
+
+---
+
+[[Next|Victory?]]]
+
+
+:: Flee in horror from this house, from this frightening place. [outside] {"position":"250,975","size":"100,100"}
+Horrified, you ran out the door, hearing the ghostly man laughing behind you. Jumping behind the wheel, you started the engine and sped away from this place.
+
+You've had enough of ghosts.
+
+---
+
+[[Next|Back to the shop]] 
+
+
+:: Flip through the thin-cover book [outside] {"position":"1500,425","size":"100,100"}
+You grabbed the cheap paperback and flipped through it quickly. According to its contents, salt, iron, and religious symbols genuinely do repel ghosts. It also contained a few spells that sounded rather silly. You couldn't help but chuckle at some of the incantations, wondering if they'd be of any use at all.
+
+---
+
+[[Take the thin-cover book]]
+
+[[Take something else|Take an item]]
+
+
+:: Gaze [inside] {"position":"500,1475","size":"100,100"}
+Reciting the ancient words on the pages of the book, you suddenly felt a strange and unsettling sensation. Someone or something was watching you. A chill ran down your spine as you realized there was something hiding behind the mysterious lines of the neat handwriting. With trembling hands, you closed the book. But a second later, you suddenly realized you were still uttering incomprehensible words in an unknown language. In horror, you clasped your mouth shut with your hands and only then did you return to silence.
+
+---
+
+[[Next|Gaze-Ghost]]
+
+
+:: Gaze-Ghost [inside] {"position":"500,1600","size":"100,100"}
+You were sitting on the floor, trying to regain control over your own body. <b>"What was that?"</b> came an anxious voice from behind you. Startled, you turned around and saw a man in his forties, dressed in a stylish 1970s suit. The only catch? He was semi-transparent, his figure eerily shimmering in the dim light. Suddenly, the man leaned towards you and asked with concern, <b>"Are you alright?"</b>
+
+---
+
+[[Scream in horror]]
+
+[["I don't know. But something looked at me.|Basic1]]
+
+
+:: Get in the van and head to the designated location. [outside] {"position":"1075,775","size":"100,100"}
+The van rumbled to a stop in front of a dilapidated house, its broken windows were dark and unwelcoming. You took a deep breath, staring at the old, crumbling structure.
+
+“I’m really doing this,” you muttered under your breath. The check in your pocket felt heavier now, as if it could somehow sense your doubt.
+
+You glanced into the back of the van from the driver’s seat. It was packed with your uncle’s clutter—old books, dusty crates, and a variety of bizarre items that might have looked valuable to someone else.
+
+<b>"Maybe I should see if there’s something useful in here?"</b>
+
+---
+
+[[Search the van for something useful]]
+
+[[Go straight to the abandoned house|Go to the house]]
+
+
+:: Get the crucifix and try to exorcise the ghost. [inside] {"position":"700,2200","size":"100,100"}
+<table><tr><td width = "60%">You raised a cross in front of you, hoping it would ward off the ghost. The man looked at you, puzzled. <b>"You know, I was never particularly religious,"</b> he remarked with mild curiosity.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $crucifix to false)
+---
+
+[[Start praying. It must help.]]
+
+[["And what did I expect..." put away the cross|Party]]
+
+
+:: Glowing [inside] {"position":"250,1475","size":"100,100"}
+Reading the ancient text from the book, you didn’t immediately realize something had changed. But then, the pages seemed to shift in color. Or was it the lighting around you? Suddenly, you found yourself surrounded by dozens of tiny floating lights in the air, illuminating the room with a mysterious glow.
+
+---
+
+[[Next|Glowing-Ghost]]
+
+
+:: Glowing-Ghost [inside] {"position":"250,1600","size":"100,100"}
+As the glowing green lights continued to dance around the room, you suddenly heard a voice from behind you, <b>"Wow, not bad. How did you do that?"</b> Startled, you spun around to see a man in his forties, dressed in a stylish suit from the 1970s. The only catch? He was semi-transparent, his form shimmering eerily in the dim light.
+
+---
+
+[[Scream in horror]]
+
+[["Well... I don't know"|Basic1]]
+
+[["I am a magician!", Snap your fingers|Joke1]]
+
+
+:: Go to sleep. [shop] {"position":"950,650","size":"100,100"}
+You stared at the check, then at the door where the woman had just stood. A ghost. An exorcism. What was she even expecting you to do? You weren’t a priest, a medium, or some kind of ghost hunter—you were just a broke shop owner with a van full of junk.
+
+You let out a sharp exhale and tossed the check onto the counter. Nope. Not my problem. Running around in the middle of the night, waving around random trinkets, hoping to scare off some imaginary spirit? That was a level of ridiculous you weren’t willing to entertain.
+
+Ghosts, if they even existed, could deal with their own issues. You had enough of your own. With that thought, you locked the door, turned off the lights, and went to bed, leaving the whole exorcism nonsense for someone else—preferably someone who actually cares.
+
+---
+
+[[Next|Bill apocalypse]]
+
+
+:: Go to the house [outside] {"position":"1075,1050","size":"100,100"}
+With a deep breath and a final glance at the van, you(if: $items >0)[ gathered your chosen items and] prepared to enter the house. The air felt heavy with anticipation as you approached the door, each step echoing through the stillness of the night.
+
+As you reached for the doorknob, the cold metal sent a shiver up your spine. The door creaked open, revealing the dimly lit interior of the abandoned house. Shadows danced on the walls, creating an eerie atmosphere that made your heart race.
+
+Taking a step inside, you couldn't help but feel a mix of excitement and dread. The adventure had just begun, and you had no idea what awaited you in the darkness.
+
+--
+
+[[Next|In the house]]
+
+
+:: Horror [inside] {"position":"1625,2900","size":"100,100"}
+You continued to read the incantation, feeling the power of the spell reach its zenith. A strange light began to emanate from the cracks in the wooden floor, growing stronger and brighter with each passing moment. It started to seep into the room, coalescing into a tangible form.
+
+Suddenly, the glowing hands lunged towards you, wrapping around your body and pulling you into their grip. <b>"Oh no! This is not fun anymore!"</b> exclaimed the ghost, trying to help you, but his spectral hands passed through your outstretched hand.
+
+The floorboards splintered and cracked, revealing a swirling abyss below, filled with colors you had never seen before. The glowing hands tightened their grip and began to drag you downwards. You felt an overwhelming force pulling you into the void, unable to resist the spell's power.
+
+The ghost's cries of alarm echoed around you, but there was nothing he could do. In a matter of moments, you were pulled into the abyss, leaving the world behind as the floorboards closed above you.
+
+---
+
+<center>THE END</center>
+
+
+:: In the house [inside] {"position":"1075,1175","size":"100,100"}
+As you stepped inside, the door creaked shut behind you, and you found yourself in a large, dilapidated house. The remnants of its former grandeur were evident in the high ceilings, ornate moldings, and sweeping staircase, all now faded and crumbling with age. The air was heavy with dust and the scent of old wood, a testament to the years of neglect.
+
+Despite the decay, there were no signs of vandalism. It was as if the house had simply been forgotten, left to weather the passage of time in solitude.
+
+As you ventured further, an unsettling sound echoed through the halls—a distant, faint laughter. You paused, heart pounding, straining to catch any more signs of life, but the sound quickly faded, leaving you in silence once more.
+
+You knew you had to get to work, but the overwhelming sense of uncertainty and the eerie atmosphere made it difficult to know where to begin.
+
+---
+
+[[Shout out, "Is anyone there?"]]
+
+[[Walk around and inspect the house]](if: $mysteryBook is true)[
+
+[[Open a mystical book to a random page and try to read it out loud.]]](if: $candles is true)[
+
+[[Place and light the candles]]](if: $discoBall is true)[
+
+[[Turn on the disco ball and hang it on the chandelier]]](if: $radio is true)[
+
+[[Turn on the radio]]]
+
+[[Start shouting loudly and insulting potential ghosts]]
+
+[[Just wait]]
+
+
+:: Joke1 [inside] {"position":"825,1750","size":"100,100"}
+<table><tr><td width = "60%">You couldn't understand how you managed not to scream in terror, instead finding yourself cracking a joke to lighten the situation. The ghost, shimmering softly in the dim light, broke into a warm smile. 
+<b>"Finally, I meet a living person with a sense of style! Such a rarity in this era!"</b>, he said with genuine delight.(if: $choice is "Glowing")[ The green lights around you slowly begin to fade.](if: $choice is "Levitation")[ Suddenly you fall to the floor, hitting your elbow hard. But at least gravity is behaving decently again.](if: $choice is "disco ball")[ The disco ball continues to throw colored lights around, looking both impressive and out of place.](if: $choice is "good music")[ The disco beats continue to pour out of the speakers of the old radio.] With a curious expression, the man continued, <b>"And what are you doing here?"</b> His voice was laced with both suspicion and intrigue as he floated closer, his eyes studying you intently.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it +1)
+---
+
+[["I've come here to banish all the spirits."]]
+
+[["I just had a free night and decided to have some fun here."]]
+
+
+:: Just wait [inside] {"position":"1125,1350","size":"100,100"}
+As you stay in silence, waiting and doing nothing, the room seemed to grow still. Just as you began to wonder if anything would happen, a voice behind you gently asked, <b>"Can I help you with something?"</b> Startled, you turned around to see a man in his forties, dressed in a stylish 1970s suit. The only catch? His form was semi-transparent, shimmering softly in the dim light.
+(set: $choice to "wait")
+---
+
+[[Scream in horror]]
+
+[["No. Not really."|Basic1]]
+
+
+:: Keep silent [shop] {"position":"1075,525","size":"100,100"}
+<table><tr><td width = "60%">You stared at her, then at the envelope she pulled from her coat. It wasn’t thick with cash, but there was something solid about it. She slid it across the counter, and you noticed it was a check—stamped with the name of a reputable bank.
+
+<b>“The full amount will be paid once the job is finished,”</b> she said, her gaze steady.
+
+You could correct her. You could explain that your uncle, the real Norrel she was looking for, had died and left you this dusty money pit of a shop. That you didn’t</td><td><img src = "https://i.imgur.com/0e8xKT2.jpeg" width = "85%" align = right></td></tr></table>know the first thing about ghosts or exorcisms. That the only thing you’d ever successfully banished was a rat from the back room.
+
+Or…
+
+You glanced at the check again
+
+---
+
+[["Right... Of course. That’s what I do.”]]
+
+[["Sorry, you must be looking for my uncle. He passed away two months ago."|Refuse]]
+
+
+
+:: Levitation [inside] {"position":"375,1475","size":"100,100"}
+Reading the ancient text from the book, you didn’t immediately realize something had changed. Only when you felt a strange sense of weightlessness and noticed your body slowly rising above the floor did the realization hit you. It was so unexpected and unusual that at first, you couldn't believe your senses.
+
+---
+
+[[Next|Levitation-Ghost]]
+
+
+
+:: Levitation-Ghost [inside] {"position":"375,1600","size":"100,100"}
+As you floated a few inches above the floor, having lost your grip on the solid surface, you suddenly heard a voice behind you, <b>"What on earth are you doing?"</b> it asked with a chuckle. Startled, you turned to see a man in his forties, dressed in a stylish 1970s suit. The only catch? He was semi-transparent, his form shimmering eerily in the dim light.
+
+---
+
+[[Scream in horror]]
+
+[["I don't know what's happening!|Basic1]]
+
+[["I'm practising air-swimming", do some swimming movements|Joke1]]
+
+
+:: Open a mystical book to a random page and try to read it out loud. [inside] {"position":"500,1350","size":"100,100"}
+Opening the book to a random page, you began to read. None of the words seemed familiar. You started to pronounce them one by one, struggling with the strange sounds. Louder and louder.
+
+---
+(set: $choice to (either: "Glowing", "Levitation", "Gaze"))
+(link:"Next")[(goto: $choice)]
+
+
+:: Open the mystical book halfway and start reading out loud. [inside] {"position":"1175,2200","size":"100,100"}
+<table><tr><td width = "60%">You began reading a random page from the mysterious book, your voice echoing in the silent room. Suddenly, the air around you started to tremble and shimmer, sending a chill down your spine. The walls seemed to pulse with an unseen energy, and the temperature dropped, filling the room with a cold, eerie mist.
+
+The ghost's eyes widened in awe. <b>"Oh wow, something's happening!"</b> he exclaimed, swaying side to side with barely contained excitement. You too felt the power in the words you were speaking, each syllable resonating with a force that gripped your very core.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+(set: $choice to (either: "Thunder", "Butterflies"))
+(link:"Next")[(goto: $choice)]
+
+
+:: Party [inside] {"position":"875,2525","size":"100,100"}
+<table><tr><td width = "60%">The ghost glanced at an imaginary watch on his semi-transparent wrist. <b>"(if: $funny > 0)[As entertaining as this has been,](else:)[Oh, look,] it's time for you to leave,"</b> he said softly.
+
+You looked at him, puzzled. <b>"Why?"</b>
+
+The ghost sighed, a hint of reluctance in his voice. <b>"Soon, there's going to be a real ghost party here. Many spirits will arrive. In fact, some of them are already here, just not revealing themselves."</b> He gestured around the room, and you noticed several faint glows dotting the hall.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+<b>"So, it's time for you to go. It's not a good idea for a living person to spend too much time with the dead,"</b> the ghost advised, his tone both serious and gentle.
+
+---
+
+[["Um, okay."]]
+
+[["Wait, I have something for your party,"]]
+
+
+:: Place and light the candles [inside] {"position":"625,1350","size":"100,100"}
+As you arranged the candles in a circle in the entrance hall, the flickering flames casting long shadows on the walls, you felt a sudden chill in the air. Just as you placed the last candle, a voice behind you remarked, <b>"That's rather cute."</b> Startled, you turned around to see a man in his forties, dressed in a stylish 1970s suit. The only catch? His form was semi-transparent, shimmering eerily in the dim light of the candles.
+(set: $choice to "candles")(set: $candles to false)
+---
+
+[[Scream in horror]]
+
+[["Yes... you are probably right."|Basic1]]
+
+
+:: Put a candlestick out [outside] {"position":"1925,1050","size":"100,100"}
+You put the candlestick out.
+(set: $candlestick to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put a crucifix out [outside] {"position":"1925,925","size":"100,100"}
+You put the crucifix out.
+(set: $crucifix to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put a disco ball out [outside] {"position":"1925,1175","size":"100,100"}
+You put the disco ball out.
+(set: $discoBall to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put a stuffed beaver out [outside] {"position":"1925,1425","size":"100,100"}
+You put the beaver out.
+(set: $beaver to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put an item out [outside] {"position":"1750,825","size":"100,100"}
+You are currently carrying (if: $items is 0)[nothing](else-if: $items is 1)[1 item](else:)[$items items]. You can put something down to free your hands.
+
+---
+(if: $mysteryBook is true)[
+
+[[Put the mystery book out]]](if: $dummyBook is true)[
+
+[[Put the thin-cover book out]]](if: $newspapers is true)[
+
+[[Put the newspapers out]]](if: $candles is true)[
+
+[[Put candles out]]](if: $salt is true)[
+
+[[Put salt out]]](if: $crucifix is true)[
+
+[[Put a crucifix out]]](if: $candlestick is true)[
+
+[[Put a candlestick out]]](if: $discoBall is true)[
+
+[[Put a disco ball out]]](if: $radio is true)[
+
+[[Put an old radio out]]](if: $beaver is true)[
+
+[[Put a stuffed beaver out]]]
+
+
+:: Put an old radio out [outside] {"position":"1925,1300","size":"100,100"}
+You put the radio out.
+(set: $radio to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put candles out [outside] {"position":"1925,675","size":"100,100"}
+You put the candles out.
+(set: $candles to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put salt out [outside] {"position":"1925,800","size":"100,100"}
+You put the salt out.
+(set: $salt to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put the mystery book out [outside] {"position":"1925,300","size":"100,100"}
+You put the mystery book out.
+(set: $mysteryBook to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put the newspapers out [outside] {"position":"1925,550","size":"100,100"}
+You put the newspapers out.
+(set: $newspapers to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Put the thin-cover book out [outside] {"position":"1925,425","size":"100,100"}
+You put the thin-cover book out.
+(set: $dummyBook to false)(set: $items to it - 1)
+---
+(if: $items > 0)[
+
+[[Put an item out]]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Read the spell from "Ghost Fighting for Dummies." [inside] {"position":"825,2200","size":"100,100"}
+<table><tr><td width = "60%">You began reading the incantation from "Ghost Fighting for Dummies," struggling with embarrassment due to its absurdity. The ghost watched you with skepticism. He scratched his head and asked, <b>"So you seriously think that this kind of reading helps to banish spirits?"</b></td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $dummyBook to false)
+---
+
+[[Continue reading. It must help.]]
+
+[["And what did I expect..." put away the book.|Party]]
+
+
+:: Refuse [shop] {"position":"950,525","size":"100,100"}
+<table><tr><td width = "60%">Her expression tensed, flickering between surprise, disappointment, and something unreadable.
+
+<b>"Really,”</b> you said, lifting a hand. <b>“I’m not my uncle. I don’t know anything about ghosts or exorcisms. I’m just… just his nephew. I inherited this shop—and trust me, it’s not exactly a goldmine. I’m just...”</b>
+
+Before you could finish, she stepped back, her face hardening into something unreadable.</td><td><img src = "https://i.imgur.com/0e8xKT2.jpeg" width = "85%" align = right></td></tr></table>
+<b>“I see,"</b> she said, her voice cool. Then, without another word, she turned and walked briskly toward the door. The bell above the shop jangled as she disappeared into the night.
+
+You stared at the empty doorway for a moment, feeling the weight of the silence settle in.
+
+---
+
+[[Next|Bill apocalypse]]
+
+
+:: Rumb through old newspapers [outside] {"position":"1500,550","size":"100,100"}
+You scanned through the newspapers, finding articles about various incidents in the town. Some stories detailed bizarre occurrences and strange sightings, hinting at haunted houses like the one you were about to enter. As you read on, the tone became more absurd, with accounts that seemed more like pranks or local folklore than genuine hauntings.
+
+---
+
+[[Search for something about this house]]
+
+[[Take all the newspapers with you]]
+
+[[Take something else|Take an item]]
+
+
+:: Scream in horror [inside] {"position":"575,1750","size":"100,100"}
+<table><tr><td width = "60%">As you stumbled upon the ghost once more, you couldn't help but scream in terror. Shocked by the sight of a real spirit, you stood frozen, unable to comprehend what you were seeing.(if: $choice is "Glowing")[ The green lights around you slowly begin to fade.](if: $choice is "Levitation")[ Suddenly you fall to the floor, hitting your elbow hard. But at least gravity is behaving decently again.](if: $choice is "candles")[ The candles continue to flicker and seem to smell of vanilla.](if: $choice is "disco ball")[ The disco ball continues to throw colored lights around, looking both impressive and out of place.](if: $choice is "good music")[ The disco beats continue to pour out of the speakers of the old radio.] The ghost, with a smirk on his semi-transparent face, asked, <b>"Are you really that scared just by seeing a ghost?"</b> His face shimmered softly in the dim light, he was clearly amused by your reaction.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+---
+
+[[Flee in horror from this house, from this frightening place.]](if: $beaver is true)[
+
+[["I'm not scared! I have a beaver!", put up a stuffed beaver, pretending it's roaring.]]](if: $salt is true)[
+
+[["Begone! Depart!", throw a pinch of salt at the ghost]]](if: $crucifix is true)[
+
+[["Begone! Depart!", hold a cross in front of you.]]](if: $candlestick is true)[
+
+[[Swing a candlestick at a ghost]]]
+
+
+:: Search for something about this house [outside] {"position":"1625,550","size":"100,100"}
+In one of the newspapers dated mid-seventies, you found an article about the old owner of the house. You started reading:
+
+"Local party animal Johnny Strange, 42, tragically passed away in his home while attempting to set the mood for a party using a faulty disco ball. According to witnesses, Johnny was known for being the life of the party and always looking for ways to surprise his guests. This time, he decided to up the ante by hooking up a disco ball, unaware of the faulty wiring. As sparks began flying from the device, Johnny, with a grin on his face, shouted, 'Now, that's disco magic!' — but unfortunately, he was struck by an electrical jolt. He continued cracking jokes, not realizing what had happened, until he was found dead shortly after."
+
+---
+
+[[Take all the newspapers with you]]
+
+[[Take something else|Take an item]]
+
+
+:: Search the van for something useful [outside] {"position":"1200,775","size":"100,100"}
+You began to rummage through the clutter. The first thing that caught your eye was a large, old book bound in Latin, secured with a strap. Its cover had an ominous look, as if warning you not to open it. You set it aside.
+
+Next to the book was a thin paperback titled "Ghost Fighting for Dummies." You smirked, imagining how it could possibly help in your situation. Apparently, your uncle had a sense of humor.
+
+Your gaze then fell on a stack of old newspapers. Perhaps they contained articles about the house and its past, which might help you better understand what you were dealing with.
+
+Underneath the stack of newspapers, you found a pack of candles and a pouch of salt. Candles were always used in rituals, right? And salt—for protection against evil spirits.
+
+An old crucifix seemed like a worthy ally in the battle against the supernatural. The iron candlestick, however, just seemed heavy enough to be useful. You carefully placed them both nearby.
+
+At the very bottom, you discovered a portable disco ball, battery-powered. It looked completely out of place among all the old stuff, but who knows—it might come in handy for a “ghostly party.”
+
+Beneath the disco ball lay an old radio. You turned it on, and for a moment, static filled the airwaves, as if someone or something was trying to communicate with you. You turned it off again, deciding to deal with it later.
+
+And finally, in the corner of the van, you spotted a stuffed beaver. It was old and dusty, but for some reason, it seemed like it might be useful. You picked it up, wondering what your uncle had seen in this odd item.
+
+Now you faced a decision. You realized you could only take 2-3 items with you. It was time to choose what would be truly useful for the upcoming night.
+
+---
+
+[[Take something|Take an item]]
+
+[[Go to the house]] 
+
+
+:: Shout out, "Is anyone there?" [inside] {"position":"950,1100","size":"100,100"}
+The words echoed through the empty halls, but no response came. The silence was almost deafening, heightening the eerie atmosphere. It seemed you were alone, at least for now.
+
+With no other choice, you steeled yourself and prepared to delve deeper into the mystery of the abandoned house, unsure of what awaited you in the shadows.
+
+---
+
+[[Walk around and inspect the house]](if: $mysteryBook is true)[
+
+[[Open a mystical book to a random page and try to read it out loud.]]](if: $candles is true)[
+
+[[Place and light the candles]]](if: $discoBall is true)[
+
+[[Turn on the disco ball and hang it on the chandelier]]](if: $radio is true)[
+
+[[Turn on the radio]]]
+
+[[Start shouting loudly and insulting potential ghosts]]
+
+[[Just wait]]
+
+
+:: Start [shop] {"position":"1075,275","size":"100,100"}
+<center><h2>Ghost Business</h2></center>
+You must have made a lot of bad decisions to end up here. Just a few months ago, you were penniless and practically homeless. Then, out of the blue, you inherited something from your estranged uncle—someone you hadn’t spoken to in years. Not a fortune, not a mansion, but an old, dusty antique shop… and a rusty van packed with junk. Desperate for a fresh start, you threw yourself into the business, clinging to the hope that it would turn your life around. But reality hit hard—the shop barely made any money, and as time passed, that hope slowly crumbled into quiet despair.
+
+---
+
+[[Next|Woman appears]]
+
+
+:: Start praying fervently [inside] {"position":"1150,2900","size":"100,100"}
+<table><tr><td width = "60%">Determined, you began reciting a prayer. The ghost sighed and crossed his semi-transparent arms. <b>"This is starting to get dull, and by the way, I think you got the text wrong,"</b> he said, sounding both amused and slightly exasperated.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[["Well, I had to try."|Farewell/Invitation]]
+
+
+
+:: Start praying. [inside] {"position":"200,2000","size":"100,100"}
+<table><tr><td width = "60%">Determined, you began reciting a prayer. The ghost sighed and crossed his semi-transparent arms. <b>"This is starting to get dull, and by the way, I think you got the text wrong,"</b> he said, sounding both amused and slightly exasperated.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[[Next|Party]]
+
+
+:: Start praying. It must help. [inside] {"position":"700,2325","size":"100,100"}
+<table><tr><td width = "60%">Determined, you began reciting a prayer. The ghost sighed and crossed his semi-transparent arms. <b>"This is starting to get dull, and by the way, I think you got the text wrong,"</b> he said, sounding both amused and slightly exasperated.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[[Next|Party]]
+
+
+:: Start shouting loudly and insulting potential ghosts [inside] {"position":"1000,1350","size":"100,100"}
+As you began shouting and hurling insults at any possible ghosts, the room echoed with your angry words. Just as you paused to catch your breath, a voice behind you cried out in indignation, <b>"This is outrageous! What do you think you're doing?"</b> Startled, you turned around to see a man in his forties, dressed in a stylish 1970s suit. The only catch? His form was semi-transparent, shimmering with irritation in the dim light.
+(set: $choice to "insults")(set: $funny to it -1)
+---
+
+[[Scream in horror]]
+
+[["Oh... Pardon?"|Basic1]]
+
+[[Continue insulting the ghost]]
+
+
+:: Swing a candlestick at a ghost [inside] {"position":"450,1875","size":"100,100"}
+<table><tr><td width = "60%">You swung the candlestick at the ghost, but he deftly dodged it and exclaimed, <b>"Oh my! You know, I used to fence!"</b> A broken chair leg flew into his hand, and he assumed a fencing stance.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $candlestick to false)
+---
+
+[[Throw the candlestick into ghost's face.]]
+
+[["En garde!", assume a stance as well]]
+
+
+
+:: Take a candlestick [outside] {"position":"1500,1050","size":"100,100"}
+You decided to take the candlestick. It fit comfortably in your hand, but would it really help against ghosts?
+(set: $candlestick to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take a crucifix [outside] {"position":"1500,925","size":"100,100"}
+You decided to take the crucifix. Yet, you wondered if it would be of any use in the hands of someone who never had much faith.
+(set: $crucifix to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take a disco ball [outside] {"position":"1500,1175","size":"100,100"}
+You decided to take the portable battery-powered disco ball. An absurd item among the old things, but who knows—spirits might enjoy a "ghostly party."
+(set: $discoBall to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take a stuffed beaver [outside] {"position":"1500,1425","size":"100,100"}
+You decided to take the stuffed beaver. An old and dusty item that seemed completely useless, yet something about it attracted your attention.
+(set: $beaver to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take all the newspapers with you [outside] {"position":"1675,675","size":"100,100"}
+You decided to take the newspapers with you, although it seemed rather pointless. They might end up being useful only for kindling, but you figured it couldn't hurt to have them on hand.
+(set: $newspapers to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take an item [outside] {"position":"1325,775","size":"100,100"}
+You are currently carrying (if: $items is 0)[nothing](else-if: $items is 1)[1 item](else:)[$items items]. You can carry a total of 3.
+
+---
+(if: $mysteryBook is false)[
+[[Examine the mystery book]]](if: $dummyBook is false)[
+[[Flip through the thin-cover book]]](if: $newspapers is false)[
+[[Rumb through old newspapers]]](if: $candles is false)[
+[[Take candles]]](if: $salt is false)[
+[[Take salt]]](if: $crucifix is false)[
+[[Take a crucifix]]](if: $candlestick is false)[
+[[Take a candlestick]]](if: $discoBall is false)[
+[[Take a disco ball]]](if: $radio is false)[
+[[Take an old radio]]](if: $beaver is false)[
+[[Take a stuffed beaver]]]
+
+
+:: Take an old radio [outside] {"position":"1500,1300","size":"100,100"}
+You decided to take the old radio. At the very least, you could listen to some music if things got too quiet.
+(set: $radio to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take candles [outside] {"position":"1500,675","size":"100,100"}
+You decided to take the pack of candles with you. They are always used in rituals and will add some light in the dark.
+(set: $candles to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take salt [outside] {"position":"1500,800","size":"100,100"}
+You decided to take the pouch of salt. It could serve as protection against evil spirits, even if it sounded like an old wives' tale.
+(set: $salt to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take the mystery book [outside] {"position":"1625,300","size":"100,100"}
+You decided to take the mystical book with you, despite the unease it caused. The book, with its ominous Latin text and sinister cover, still sent shivers down your spine. Holding it tightly, you couldn't shake off the feeling that it was both a powerful ally and a potential danger.
+(set: $mysteryBook to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Take the thin-cover book [outside] {"position":"1625,425","size":"100,100"}
+You decided to take the cheap paperback with you. It still seemed dubious, but it might be useful. Tucking it under your arm, you prepared to face whatever awaited you.
+(set: $dummyBook to true)(set: $items to it + 1)
+---
+
+[[Put an item out]](if: $items < 3)[
+
+[[Take something else|Take an item]]]
+
+[[Go to the house]] 
+
+
+:: Throw the candlestick into ghost's face. [inside] {"position":"450,2000","size":"100,100"}
+<table><tr><td width = "60%">Deciding to take a different approach, you hurled the candlestick directly at the ghost's face. The candlestick passed straight through his head, leaving him momentarily stunned. His expression turned to one of disappointment as he tossed the chair leg aside. <b>"Well, that was quite underwhelming. I was just starting to have fun,"</b> he remarked, sounding genuinely disheartened.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>(set: $funny to it - 1)
+---
+
+[[Next|Party]]
+
+
+:: Thunder [inside] {"position":"1100,2325","size":"100,100"}
+<table><tr><td width = "60%">You finished reciting the incantation, uttering the last words. For a few seconds, everything remained eerily calm. Then, a terrifying thunder roared, echoing repeatedly, shaking the very foundations of the room. After several seconds of this relentless cacophony, it abruptly stopped.
+
+You cautiously peeked through the broken window, but outside, everything was peaceful and undisturbed. The ghost floated nearby, his expression one of amazement. <b>"I don't know what that was, but it was impressive,"</b> he said, his voice filled with genuine awe.</td><td><img src = "https://i.imgur.com/MxcCRo8.jpeg" width = "85%" align = right></td></tr></table>
+You nodded uncertainly, still trying to process what had just happened.
+
+---
+
+[[Next|Party]]
+
+
+:: Tune in to a station with dubstep [inside] {"position":"950,1475","size":"100,100"}
+As you tuned the radio to a dubstep station, the room was filled with pulsating electronic beats. Just as you began to listen, a voice behind you grumbled in displeasure, <b>"No, no, this won't do at all! This is just awful."</b> Startled, you turned around to see a man in his forties, dressed in a stylish 1970s suit. The only catch? His form was semi-transparent, shimmering with irritation.
+
+The ghost covered his ears with his hands, visibly wincing at the sound. Then, with an annoyed expression, he waved one hand towards the radio. There was a loud crackle, and the radio fell silent, probably for good.
+(set: $choice to "bad music")(set: $funny to it -1)(set: $radio to false)
+---
+
+[[Scream in horror]]
+
+[["Oh..."|Basic1]]
+
+
+:: Tune in to a station with energetic disco [inside] {"position":"825,1475","size":"100,100"}
+As you tuned the radio to a lively disco station, the room suddenly filled with energetic beats. Just as you stepped back to enjoy the music, a voice behind you exclaimed in delight, <b>"Yes, now this is party music!"</b> Startled, you turned around to see a man in his forties, dressed in a stylish 1970s suit. The only catch? His form was semi-transparent, shimmering with excitement in the pulsating rhythm of the disco. He snapped his fingers to the beat and swayed, clearly thrilled by the familiar tunes.
+(set: $choice to "good music")(set: $funny to it +1)(set: $radio to false)
+---
+
+[[Scream in horror]]
+
+[["Yes... you are probably right."|Basic1]]
+
+[["You sure know the stuff!", do a few dancing moves|Joke1]]
+
+
+:: Turn on the disco ball and hang it on the chandelier [inside] {"position":"750,1350","size":"100,100"}
+As you turned on the portable disco ball and hung it on the old chandelier, the room was suddenly filled with dancing lights and colors. Just as you stepped back to admire your work, a voice behind you exclaimed in delight, <b>"This is perfect for a party! Just what I needed!"</b> Startled, you turned around to see a man in his forties, dressed in a stylish 1970s suit. The only catch? His form was semi-transparent, shimmering with excitement in the colorful lights of the disco ball.
+(set: $choice to "disco ball")(set: $funny to it +1)(set: $discoBall to false)
+---
+
+[[Scream in horror]]
+
+[["Yes... you are probably right."|Basic1]]
+
+[["You sure know the stuff!", take a disco dancer pose|Joke1]]
+
+
+:: Turn on the radio [inside] {"position":"875,1350","size":"100,100"}
+Placing the old radio on the floor, you switched it on. The air filled with the static noise of radio interference. You listened intently for a while, hoping someone or something might try to make contact. But no, there was nothing. Just the endless hiss and crackle of the static.
+
+Disappointed, you glanced at the dial and thought about tuning into a music station instead. Or should you do something else?
+
+---
+
+[[Tune in to a station with energetic disco]]
+
+[[Tune in to a station with dubstep]](if: $mysteryBook is true)[
+
+[[Open a mystical book to a random page and try to read it out loud.]]](if: $candles is true)[
+
+[[Place and light the candles]]](if: $discoBall is true)[
+
+[[Turn on the disco ball and hang it on the chandelier]]]
+
+[[Start shouting loudly and insulting potential ghosts]]
+
+[[Just wait]]
+
+
+:: Variables [startup] {"position":"825,275","size":"100,100"}
+(set: $funny to 0)(set: $items to 0)(set: $mysteryBook to false)(set: $dummyBook to false)(set: $newspapers to false)(set: $candles to false)(set: $salt to false)(set: $crucifix to false)(set: $candlestick to false)(set: $discoBall to false)(set: $radio to false)(set: $beaver to false)(set: $choice to "")
+
+
+
+:: Victory? [shop] {"position":"450,650","size":"100,100"}
+Slowly, you walked out of the now empty house, where not long ago, even if they were not alive, interesting people could have been having fun. You climbed into your van, wondering if you had done the right thing and if this was what your uncle had been doing all along. Driving slowly to your antique shop, you eventually arrived and settled into bed, your mind still racing with thoughts of the night's events.
+
+The next day, you cashed the check, feeling the weight of the cash in your hands. It made you think, <b>"Perhaps I really should get into this ghost business."</b>
+
+---
+
+<center>THE END</center>
+
+
+:: Walk around and inspect the house [inside] {"position":"950,1225","size":"100,100"}
+Determined to get a better sense of your surroundings, you began to explore the house. Each room hinted at its former grandeur, now veiled in neglect. Treacherous holes in the floor revealed glimpses of the dark basement below, making you tread carefully.
+
+In the once-elegant living room, faded wallpaper clung to the walls, and a grand chandelier hung precariously. An old armchair sat by the fireplace, its cushions flattened by time.
+
+At one point, you paused, certain you heard faint music. Straining to identify the source, you couldn't tell where it came from. Maybe the wind carried a distant tune through the broken window panes.
+
+With each step, you felt the weight of the house's history pressing down on you. The uncertainty of what lay ahead made every creak seem like a warning.
+
+After your exploration, you made your way back to the entrance hall, feeling that the inspection hadn't revealed anything useful.
+
+---
+(if: $mysteryBook is true)[
+
+[[Open a mystical book to a random page and try to read it out loud.]]](if: $candles is true)[
+
+[[Place and light the candles]]](if: $discoBall is true)[
+
+[[Turn on the disco ball and hang it on the chandelier]]](if: $radio is true)[
+
+[[Turn on the radio]]]
+
+[[Start shouting loudly and insulting potential ghosts]]
+
+[[Just wait]]
+
+
+:: Woman appears [shop] {"position":"1075,400","size":"100,100"}
+<table><tr><td width = "60%">The bell above the shop door jingled, breaking the stillness of another slow evening. You barely looked up from the counter, expecting yet another browser who’d glance around and leave without buying anything.
+
+Instead, a woman in a dark coat stepped inside. She was tall, poised, and looked slightly out of place among the dusty shelves and cluttered display cases. Her sharp gaze swept the shop before landing on you.</td><td><img src = "https://i.imgur.com/0e8xKT2.jpeg" width = "85%" align = right></td></tr></table>
+<b>“You’re Norrel?”</b> she asked.
+
+You blinked. It wasn’t really a question, more of a confirmation.
+
+<b>“Yeah,”</b> you said, because, well… you were, because your uncle shared the same last name with you
+
+The woman nodded, as if that settled something in her mind.
+
+<b>“I have a… situation,”</b> she continued, lowering her voice slightly. <b>“The property I recently purchased is haunted.”</b>
+
+Your brain stalled for a second. “Haunted.”
+
+<b>“Yes. And I was told that you”</b>, she gave a slight tilt of her head, “handle these things.”
+
+---
+
+[[Keep silent]]
+
+[["Sorry, you must be looking for my uncle. He passed away two months ago."|Refuse]]
+
+
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+    font-family: "Georgia", serif;
+    color: #fffff0;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+    text-align: justify;
+}
+
+table {
+    margin-left: -1mm;
+}
+
+
+tw-link {
+    color: #a0c4ff;
+    transition: color 0.3s ease-in-out;
+}
+
+tw-link:hover {
+    color: #ddffff;
+    text-shadow: 0px 0px 5px rgba(154, 42, 255, 0.7);
+}
+
+tw-link.visited {
+    color: #788b9c;
+}
+
+tw-link.visited:hover {
+    color: #ddffff;
+    text-shadow: 0px 0px 5px rgba(154, 42, 255, 0.7);
+}
+
+tw-story[tags~="shop"] {
+    background-image:url("https://i.imgur.com/tPkDZsX.jpeg");
+    background-width:100%;
+    background-attachment: fixed;
+}
+
+tw-story[tags~="outside"] {
+    background-image:url("https://i.imgur.com/UPKhQd6.jpeg");
+    background-width:100%;
+    background-attachment: fixed;
+}
+
+tw-story[tags~="inside"] {
+    background-image:url("https://i.imgur.com/7UDKItn.jpeg");
+    background-width:100%;
+    background-attachment: fixed;
+}
